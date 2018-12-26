@@ -1,0 +1,103 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	#header .slogan{padding-top: 0;}
+	#topMenu li a {padding: 0px 5px;font-size: 16px;font-size: 1rem;border-right: none;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	#header .slogan{padding-top: 17px;}
+	#header .headInfo{padding-top: 15px;}
+	#topMenu{z-index: 999;}
+	#topMenu #topMenuCont{
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(44, 191, 217,0.6);
+		background: rgba(0,0,0,0.8);
+		z-index: 999;
+		padding-top: 20px;
+		display: none;
+		border-bottom: none;
+	}
+	#topMenuInner{width: 100%;float: none;}
+	#topMenuInner li{font-size: 1rem;font-weight: 700;border-left:3px solid transparent;width: 100%;text-align: center;text-transform: uppercase;}
+	#topMenuInner li:hover{background: #753c2e;border-left:3px solid #2e8b9c;}
+	#topMenuInner li a:hover{background: none;color: #2e8b9c;}
+	#topMenuInner li a{line-height: 1.25rem;}
+	.catMenu{display: none;}
+	#aside:before{width: 7000px;right: -2500px;}
+	.catMenu ul{width: 350px;margin: 0px auto;}
+	.footLogoCont{text-align: center;}
+	.footCopy{margin-top: 30px;margin-bottom: 30px;}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	#header .logo{text-align: center;}
+	.shortButtons{text-align: center;margin-top: 10px;}
+	#content{margin-left: 0;padding-left: 0;padding-right: 0;}
+	#content > p{text-align: justify;}
+	.footMenuCont,#footer ul  {text-align: center;}
+	.catalogItemCont {text-align: center;}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	#header .sectionLeft,
+	#header .sectionRight{width: 100% !important;text-align: left!important;}
+	#topMenu{text-align: center;}
+	#topMenu .menuCont{float: none;}
+	#topMenu .searchCont{float: none;border-left: none;}
+	.footMenuCont{width: 100%!important;}
+	.footMenuCont,#footer ul  {float: none;text-align: center;}
+	.shortSubCatalog .catalogItem{margin: 0 auto 15px;}
+	.shortSubCatalog .catalogItemCont{text-align: center;}
+	.gallery .gallery-item{width: 90%!important;margin-left: auto;margin-right: auto;float: none!important;}
+	.box-modal{padding-left: 30px;padding-right: 30px;width: 300px;}
+	.mfp-close{right: 0;top: -60px;}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+	.catalogItemCont{width: 50%;}
+	.shortSubCatalog .catalogItemCont{width: 50%;text-align: center;}
+	
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.catMenu{display: block!important;}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	#content{width: 813px;}
+	#aside{width: 310px;}
+}
